@@ -10,9 +10,9 @@ export const personalInfo = {
   name: "Nishchal Kotiyan",
   firstName: "Nishchal",
   lastName: "Kotiyan",
-  title: "AI Full Stack Developer / AI Engineer",
-  tagline: "AI Full Stack Developer / AI Engineer",
-  bio: `Aspiring AI Full-Stack Developer with hands-on experience building web applications and AI-powered projects. I enjoy solving problems, learning new technologies, and turning ideas into practical solutions. Currently strengthening my skills in AI development, backend engineering, and AWS deployment while looking forward to collaborating with teams, contributing to real-world projects, and continuously growing as a developer.`,
+  title: "Full Stack Developer / AI Engineer",
+  tagline: "Full Stack Developer / AI Engineer",
+  bio: `Aspiring Full-Stack Developer with hands-on experience building web applications and AI-powered projects. Passionate about solving real-world problems through technology and building practical solutions. Currently strengthening my skills in AI development, backend engineering, and AWS deployment, while seeking opportunities to collaborate with teams and contribute to real-world projects.`,
   email: "nishchalk127@gmail.com",
   location: "Karnataka, India",
   yearsOfExperience: 5,            // TODO: Update years of experience
@@ -172,7 +172,7 @@ export const skillArchive = {
   frameworks: ["React.js", "Django", "Django REST Framework", "FastAPI"],
   databases: ["MongoDB", "PostgreSQL", "SQLite"],
   testing: ["Postman", "pytest"],
-  interests: ["AI Full Stack Development", "AI Engineering"],
+  interests: ["Full Stack Development", "AI Engineering"],
 };
 
 // TODO: Replace with your real experience

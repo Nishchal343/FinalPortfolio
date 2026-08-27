@@ -124,7 +124,7 @@ export default function SkillsSection() {
                 gap: '0.5rem',
               }}>
                 <span>{tabs.find(t => t.id === activeTab)?.icon}</span>
-                TECHNICAL SKILLS & INTERESTS
+                {activeTab === 'interests' ? 'INTERESTS' : 'TECHNICAL SKILLS'}
               </div>
               <div style={{
                 fontFamily: "'Zen Kaku Gothic New', sans-serif",
