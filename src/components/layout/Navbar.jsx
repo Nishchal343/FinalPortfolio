@@ -44,6 +44,16 @@ export default function Navbar({ isDark, onToggleTheme }) {
     setIsMobileOpen(false);
   }, []);
 
+  const handleBrandClick = useCallback((e) => {
+    if (window.matchMedia('(max-width: 768px)').matches) {
+      e.preventDefault();
+      setIsMobileOpen((isOpen) => !isOpen);
+      return;
+    }
+
+    handleNavClick(e, '#hero');
+  }, [handleNavClick]);
+
   return (
     <>
       <motion.nav
@@ -74,7 +84,9 @@ export default function Navbar({ isDark, onToggleTheme }) {
         {/* Logo */}
         <a
           href="#hero"
-          onClick={(e) => handleNavClick(e, '#hero')}
+          onClick={handleBrandClick}
+          aria-label="Open navigation menu"
+          aria-expanded={isMobileOpen}
           style={{
             fontFamily: "'Outfit', sans-serif",
             fontWeight: 800,
