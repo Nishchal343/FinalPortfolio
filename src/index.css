@@ -476,6 +476,76 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================================
+   MOBILE LAYOUT REFINEMENTS
+   ============================================================ */
+@media (max-width: 640px) {
+  .section-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #hero {
+    min-height: 100svh !important;
+    padding: 5.5rem 1rem 3.5rem !important;
+  }
+
+  #about,
+  #skills,
+  #projects,
+  #contact {
+    padding: var(--spacing-section-mobile) 1rem !important;
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 9vw, 2.6rem);
+  }
+
+  .hero-actions {
+    width: 100%;
+    gap: 0.75rem !important;
+    margin-bottom: 2.5rem !important;
+  }
+
+  .hero-cta {
+    width: 100%;
+    justify-content: center;
+    padding: 0.85rem 1rem !important;
+    font-size: 1rem !important;
+  }
+
+  #skills .glass-panel,
+  #contact form {
+    padding: 1.25rem !important;
+  }
+
+  #skills .glass-panel > div:first-child {
+    align-items: flex-start !important;
+  }
+
+  #skills .glass-panel > div:first-child > div:last-child {
+    width: 100%;
+    font-size: 0.58rem !important;
+  }
+
+  #projects .featured-grid,
+  #projects .project-grid {
+    gap: 1rem !important;
+  }
+
+  #projects .featured-grid > *,
+  #projects .project-grid > * {
+    min-width: 0;
+  }
+
+  input,
+  textarea,
+  button,
+  a {
+    max-width: 100%;
+  }
+}
+
+/* ============================================================
    CUSTOM CURSOR (desktop only)
    ============================================================ */
 @media (hover: hover) and (pointer: fine) {

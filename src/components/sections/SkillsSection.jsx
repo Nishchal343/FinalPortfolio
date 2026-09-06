@@ -110,6 +110,8 @@ export default function SkillsSection() {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'space-between',
+              gap: '1rem',
+              flexWrap: 'wrap',
               marginBottom: '1.5rem',
               paddingBottom: '1rem',
               borderBottom: '1px solid var(--border-subtle)',

@@ -47,6 +47,7 @@ export default function Navbar({ isDark, onToggleTheme }) {
   return (
     <>
       <motion.nav
+        className="site-nav"
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
@@ -89,7 +90,7 @@ export default function Navbar({ isDark, onToggleTheme }) {
           }}
         >
           <span style={{ fontSize: '1.4rem' }}>⚡</span>
-          <span style={{ fontSize: '0.7rem', opacity: 0.6 }}>MY DIGITAL SPACE</span>
+          <span className="nav-brand-subtitle" style={{ fontSize: '0.7rem', opacity: 0.6 }}>MY DIGITAL SPACE</span>
         </a>
 
         {/* Desktop nav links */}
@@ -222,6 +223,20 @@ export default function Navbar({ isDark, onToggleTheme }) {
           .nav-desktop-links { display: none !important; }
           .nav-mobile-controls { display: flex !important; }
           .nav-mobile-menu { display: flex !important; }
+        }
+
+        @media (max-width: 420px) {
+          .site-nav {
+            top: 0.5rem !important;
+            width: calc(100% - 1rem) !important;
+            padding: 0.45rem 0.7rem !important;
+          }
+          .nav-brand-subtitle { display: none; }
+          .nav-mobile-menu {
+            top: 4.25rem !important;
+            left: 0.5rem !important;
+            right: 0.5rem !important;
+          }
         }
       `}</style>
     </>

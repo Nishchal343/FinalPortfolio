@@ -12,12 +12,13 @@ export const personalInfo = {
   lastName: "Kotiyan",
   title: "Full Stack Developer / AI Engineer",
   tagline: "Full Stack Developer / AI Engineer",
+  profileImage: "/images/profile.png",
   bio: `Aspiring Full-Stack Developer with hands-on experience building web applications and AI-powered projects. Passionate about solving real-world problems through technology and building practical solutions. Currently strengthening my skills in AI development, backend engineering, and AWS deployment, while seeking opportunities to collaborate with teams and contribute to real-world projects.`,
   email: "nishchalk127@gmail.com",
   location: "Karnataka, India",
   yearsOfExperience: 5,            // TODO: Update years of experience
   projectsCompleted: 30,           // TODO: Update projects count
-  resumeUrl: "#",                  // TODO: Add your resume PDF URL
+  resumeUrl: "/Nishchal_Resume.pdf",
   social: {
     github: "https://github.com/Nishchal343",
     linkedin: "https://www.linkedin.com/in/nishchal-kotiyan-346149293/",

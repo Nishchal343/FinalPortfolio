@@ -39,6 +39,7 @@ export default function HeroSection() {
       }}>
         {/* Profile Photo Card */}
         <motion.div
+          className="hero-actions"
           ref={photoRef}
           initial={{ opacity: 0, scale: 0.8, y: 30 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -77,22 +78,16 @@ export default function HeroSection() {
             justifyContent: 'center',
             overflow: 'hidden',
           }}>
-            {/* TODO: Replace with your photo — use an <img> tag here */}
-            <div style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              gap: '0.5rem',
-              color: 'var(--text-dim)',
-            }}>
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ff6b9d" strokeWidth="1.5" opacity="0.4">
-                <circle cx="12" cy="8" r="4" />
-                <path d="M4 20c0-4 4-7 8-7s8 3 8 7" />
-              </svg>
-              <span style={{ fontSize: '0.65rem', fontFamily: "'Outfit', sans-serif", opacity: 0.5 }}>
-                Your Photo
-              </span>
-            </div>
+            <img
+              src={personalInfo.profileImage}
+              alt={`${personalInfo.name} profile portrait`}
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                display: 'block',
+              }}
+            />
             {/* Halftone overlay */}
             <div style={{
               position: 'absolute',
@@ -183,7 +178,7 @@ export default function HeroSection() {
           transition={{ delay: 1.9, duration: 0.5 }}
           style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '3.5rem' }}
         >
-          <GlowButton href="#projects" variant="primary" size="lg">
+          <GlowButton className="hero-cta" href="#projects" variant="primary" size="lg">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z" />
               <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" />
@@ -191,10 +186,11 @@ export default function HeroSection() {
             View Projects
           </GlowButton>
           <GlowButton
-            href={personalInfo.resumeUrl}  /* TODO: Add your resume URL */
+            className="hero-cta"
+            href={personalInfo.resumeUrl}
             variant="outline"
             size="lg"
-            download
+            download="Nishchal_Kotiyan_Resume.pdf"
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
