@@ -18,7 +18,7 @@ export const personalInfo = {
   location: "Karnataka, India",
   yearsOfExperience: 5,            // TODO: Update years of experience
   projectsCompleted: 30,           // TODO: Update projects count
-  resumeUrl: "/Nishchal_Resume.pdf",
+  resumeUrl: "/Nishchal_k%20Resume.pdf",
   social: {
     github: "https://github.com/Nishchal343",
     linkedin: "https://www.linkedin.com/in/nishchal-kotiyan-346149293/",
